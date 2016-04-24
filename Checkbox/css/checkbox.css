@@ -1,0 +1,31 @@
+.button-toggle,
+.button-toggle::before {
+    display: block;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+
+.button-toggle::before {
+    box-shadow: -3px 3px 10px #333,
+        0 2px 10px #eee inset,
+        0 -2px 10px #333 inset;
+    line-height: 55px;
+}
+
+.button-toggle::before {
+    content: 'OFF';
+    background: red;
+    transition: all .3s ease-in-out;
+}
+
+.button-toggle:checked::before {
+    content: 'ON';
+    background: green;
+    transition: all .3s ease-in-out;    
+}

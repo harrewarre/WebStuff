@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: consolas;
+}
+
+.container {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 30%;
+    margin-top: -100px;
+    padding: 20px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    box-shadow: 0 0 10px #222;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container > h1 {
+    font-size: 14px;
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
