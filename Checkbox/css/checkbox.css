@@ -1,3 +1,7 @@
+.button-toggle {
+    appearance: none;
+}
+
 .button-toggle,
 .button-toggle::before {
     display: block;
