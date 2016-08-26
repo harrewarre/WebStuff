@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button-toggle {
     appearance: none;
 }
@@ -13,23 +14,56 @@
     color: #FFF;
     font-weight: bold;
     border: 2px solid #333;
+=======
+.checkbox > input[type=checkbox] {
+    visibility: hidden;
 }
 
-.button-toggle::before {
-    box-shadow: -3px 3px 10px #333,
-        0 2px 10px #eee inset,
-        0 -2px 10px #333 inset;
-    line-height: 55px;
+.checkbox,
+.checkbox > div {
+    border-radius: 25px;
+    width: 110px;
+    height: 50px;
 }
 
-.button-toggle::before {
-    content: 'OFF';
-    background: red;
-    transition: all .3s ease-in-out;
+.checkbox {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
 }
 
-.button-toggle:checked::before {
-    content: 'ON';
-    background: green;
-    transition: all .3s ease-in-out;    
+.checkbox > div {
+    box-shadow: 0 3px 15px #222 inset;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    transition: all .25s ease-in;
+    background-color: #CCC;
+>>>>>>> 896e18db735ce3c84662ae815f44812cb3bd95ca
+}
+
+.checkbox > label {
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    box-shadow: 0 0 10px #333,
+        0 0 10px #fff inset,
+        0 -5px 20px #333 inset;
+    z-index: 2;
+}
+
+.checkbox > input[type=checkbox]:checked ~ label {
+    left: 62px;
+}
+
+.checkbox > input[type=checkbox]:checked ~ div {
+    background: #9BD805;
 }
